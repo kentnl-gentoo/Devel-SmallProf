@@ -32,7 +32,7 @@ sub DB {
   # evals which do not define subroutines will disappear.
   no strict 'refs';
   $listings{$filename} = \@{"main::_<$filename"}
-    if defined(@{"main::_<$filename"});
+    if @{"main::_<$filename"};
   use strict 'refs';
 
   my($delta);
