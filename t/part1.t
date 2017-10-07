@@ -6,4 +6,4 @@
 # doesn't have it's contents put into the symbol table.  Thus this shim which
 # invokes the real part1 so that its contents are visible.
 
-do 't/part1.b' or die "$!";
+do './t/part1.b' or die "$!";

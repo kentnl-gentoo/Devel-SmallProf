@@ -9,7 +9,7 @@ unless (open(OUT,'smallprof.out')) {
 undef $/;
 $_ = <OUT>;
 close OUT;
-print +(/Profile of \(eval/ && m!Profile of t.part1\.b!) 
+print +(/Profile of \(eval/ && m!Profile of \./t.part1\.b!)
                                            ? "ok  1\n" : "not ok  1\n";
 my (@matches) = /Profile of/g;
 print +(@matches == 3)                     ? "ok  2\n" : "not ok  2\n";

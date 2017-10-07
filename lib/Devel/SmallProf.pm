@@ -55,8 +55,8 @@ BEGIN {
   $drop_zeros = 0;
   $profile = 1;
   $grep_format = 0;
-  if (-e '.smallprof') {
-    do '.smallprof';
+  if (-e './.smallprof') {
+    do './.smallprof';
   }
   my $env=$ENV{SMALLPROF_CONFIG}||'';
   $drop_zeros = 1 if $env=~/z/;

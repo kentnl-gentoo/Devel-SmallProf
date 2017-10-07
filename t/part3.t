@@ -1,3 +1,3 @@
 #!perl -d:SmallProf
 
-do 't/part3.b' or die "$!";
+do './t/part3.b' or die "$!";
